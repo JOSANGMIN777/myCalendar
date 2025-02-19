@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+:root {
+    --fc-event-bg-color: background-color: none;
+    --fc-event-border-color: background-color: none;
+}
+
+.fc {
+    background-color: white;
+}
+
+#calendar-container {
+    width: 100%;
+}
+
+
+.fc .fc-day-sun a {
+    color: red;
+}
+  
+.fc .fc-day-sat a {
+    color: blue;
+}
+
+.fc .fc-toolbar-title {
+    .fc-day a {
+        color: rgb(0,0,0,0.5);
+    }
+    font-weight: bold;
+}
+
+
+/* 일정표 툴 바  */
+.fc .fc-toolbar.fc-header-toolbar {
+    margin: 0;
+    height: 50px;
+    font-size: 12px;
+    line-height: 40px;
+    color: black;
+    width: 200px;
+    border-radius: 20px;
+    gap:20px;
+}
+
+/* 툴바의 버튼 */
+.fc .fc-toolbar-chunk .fc-button {
+    display: flex;
+    border: 2px solid skyblue;
+    font-size: 10px;
+    background-color: white;
+    height: 20px;
+    color: skyblue;
+    padding: 1px 2.5px;
+    width: 50px;
+}
+
+.fc .fc-toolbar-chunk {
+    display: flex;
+    width: 100;
+  }
+
+.fc .fc-toolbar-chunk .fc-toolbar-title {
+    margin-left: 5px; 
+  }  
+
+/* 툴바 사용 불가 버튼 스타일 */
+/* .fc .fc-toolbar-chunk .fc-button:disabled {
+    color: #e8e8e8;
+} */
+/* 툴바 사용 불가 버튼 hover 시 스타일 주지 않기 */
+.fc .fc-toolbar-chunk .fc-button:disabled:hover {
+    background-color: transparent;
+}
+
+.fc .fc-daygrid-day-frame {
+    background-color: white;
+}
+
+/* 툴바 버튼 포커스 시 그림자 제거 */
+.fc .fc-toolbar-chunk .fc-button:focus {
+    box-shadow: none;
+}
+
+/* 툴바 버튼 hover 시 배경색 변경 */
+.fc .fc-toolbar-chunk .fc-button:hover {
+    background-color: skyblue;
+    border: none;
+}
+
+/* 날짜변경 화살표 아이콘 */
+.fc .fc-button-primary span {
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 28px;
+    color: skyblue;
+}
+
+/* 요일의 높이 */
+.fc-theme-standard th {
+    height: 25px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    line-height: 10px;
+    /* color: #7b7b7b; */
+    vertical-align: middle;
+}
+
+/* Today Cell에 배경색 주기 */
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #e6895724;
+}
+
+/* 날짜 Cell 프레임 */
+.fc .fc-daygrid-day-frame {
+
+}
+
+/* 월간,주간 view의 Cell이 시작하는 위치 */
+.fc .fc-daygrid-day-top {
+    flex-direction: row;
+    height: 30px;
+    margin-bottom: 3px;
+}
+
+/* 
+.fc .fc-daygrid-day-number {
+    z-index: auto !important;
+} */
+
+/* 이벤트 막대 스타일 */
+.fc-event {
+    padding: 5px 2px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 8px;
+    cursor: pointer;
+}
