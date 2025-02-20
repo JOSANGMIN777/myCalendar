@@ -1,4 +1,7 @@
 # myCalendar
+
+### 과제전형을 대비해 개발한 미니 프로젝트
+
 ### react-calendar 라이브러리를 사용한 나만의 캘린더
 
 ### 사용 스택: TypeScript, React, Next
