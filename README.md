@@ -1,6 +1,8 @@
 # myCalendar
 ### react-calendar 라이브러리를 사용한 나만의 캘린더
 
+### 사용 스택: TypeScript, React, Next
+
 - react-calendar에서 제공하는 dayGrid, interaction 플러그인을 사용하여 커스터마이징이 가능
 
 - 모바일 버전을 고려하여 width 768px 이하 일 경우 사이드바에서 햄버거 버튼으로 바뀌도록 반응형으로 제작
